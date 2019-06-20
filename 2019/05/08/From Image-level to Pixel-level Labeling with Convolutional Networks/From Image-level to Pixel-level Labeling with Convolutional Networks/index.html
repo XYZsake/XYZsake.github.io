@@ -7,7 +7,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
@@ -79,20 +79,21 @@
 
 
 
-<meta name="description" content="Abstract We are interested in inferring object segmentation by leveraging only object class information, and by considering only minimal priors on the object segmentation task.  This problem could be">
+<meta name="description" content="Abstract We are interested in inferring object segmentation by leveraging only object class information, and by considering only minimal priors on the object segmentation task. This problem could be v">
 <meta name="keywords" content="CNN,Weakly Supervised Learning,MIL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【论文笔记】From Image-level to Pixel-level Labeling with Convolutional Networks">
 <meta property="og:url" content="http://yoursite.com/2019/05/08/From Image-level to Pixel-level Labeling with Convolutional Networks/From Image-level to Pixel-level Labeling with Convolutional Networks/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Abstract We are interested in inferring object segmentation by leveraging only object class information, and by considering only minimal priors on the object segmentation task.  This problem could be">
+<meta property="og:description" content="Abstract We are interested in inferring object segmentation by leveraging only object class information, and by considering only minimal priors on the object segmentation task. This problem could be v">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/05/08/From%20Image-level%20to%20Pixel-level%20Labeling%20with%20Convolutional%20Networks/From%20Image-level%20to%20Pixel-level%20Labeling%20with%20Convolutional%20Networks/Figure1.png">
-<meta property="og:updated_time" content="2019-05-08T14:25:14.987Z">
+<meta property="og:image" content="https://i.loli.net/2019/05/09/5cd401b7ebcfd.png">
+<meta property="og:image" content="https://i.loli.net/2019/05/09/5cd41117e993c.png">
+<meta property="og:updated_time" content="2019-05-09T12:45:30.820Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【论文笔记】From Image-level to Pixel-level Labeling with Convolutional Networks">
-<meta name="twitter:description" content="Abstract We are interested in inferring object segmentation by leveraging only object class information, and by considering only minimal priors on the object segmentation task.  This problem could be">
-<meta name="twitter:image" content="http://yoursite.com/2019/05/08/From%20Image-level%20to%20Pixel-level%20Labeling%20with%20Convolutional%20Networks/From%20Image-level%20to%20Pixel-level%20Labeling%20with%20Convolutional%20Networks/Figure1.png">
+<meta name="twitter:description" content="Abstract We are interested in inferring object segmentation by leveraging only object class information, and by considering only minimal priors on the object segmentation task. This problem could be v">
+<meta name="twitter:image" content="https://i.loli.net/2019/05/09/5cd401b7ebcfd.png">
 
 
 
@@ -128,7 +129,7 @@
 
 
 
-  <title>【论文笔记】From Image-level to Pixel-level Labeling with Convolutional Networks | Hexo</title>
+  <title>【论文笔记】From Image-level to Pixel-level Labeling with Convolutional Networks | Hexo</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -147,7 +148,7 @@
     
   
 
-  <div class="container sidebar-position-right page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 	<a href="https://XYZsake.github.io" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -372,20 +373,31 @@
       
 
       
-        <h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><ol>
-<li>We are interested in inferring object segmentation by leveraging only object class information, and by considering only minimal priors on the object segmentation task. </li>
-<li>This problem could be viewed as a kind of weakly supervised segmentation task, and naturally fits the Multiple Instance Learning (MIL) framework. We propose a Convolutional Neural Network-based model, which is constrained during training to put more weight on pixels which are important for classifying the image. </li>
-<li>At the test time, the model has learned to discriminate the right pixels well enough, such that it performs very well on an existing segmentation benchmark, by adding only few smoothing priors.</li>
+        <h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><ol>
+<li>We are interested in inferring object segmentation by leveraging only <strong>object class information</strong>, and by considering only minimal priors on the object segmentation task.</li>
+<li>This problem could be viewed as a kind of <strong>weakly supervised segmentation task</strong>, and naturally fits the <strong>Multiple Instance Learning (MIL) framework</strong>. We propose a Convolutional Neural Network-based model, which is constrained during training to <strong>put more weight on pixels which are important for classifying the image</strong>.</li>
+<li>At the test time, the model has learned to discriminate the right pixels well enough, such that it performs very well on an existing segmentation benchmark, by adding only few <strong>smoothing priors</strong>.<a id="more"></a>
+</li>
 </ol>
-<a id="more"></a>
-<h2 id="Introction"><a href="#Introction" class="headerlink" title="Introction"></a>Introction</h2><ol>
-<li><p>Disadvantage of other segmentation and classification methods<br>(1). The need of a large number of fully-labeled dataset for training.<br>(2). Labeling data for segmentation task is difficult if com-pared to labeling data for classification. </p>
-</li>
-<li><p>Advantage of proposed method<br>(1) Avoiding designing task-specific features for segmentation.<br>(2) Considering the more challenging problem of object segmentation and do not use any information other than the image-level annotation.<br>(3) No segmentation information (the proposed model is not refined over the segmen-tation data either), nor bounding box annotation during the training period.</p>
-</li>
-<li><p>A general illustation of approach<br><img src="/2019/05/08/From Image-level to Pixel-level Labeling with Convolutional Networks/From Image-level to Pixel-level Labeling with Convolutional Networks/Figure1.png" alt="Figure1"> </p>
-
-</li>
+<h1 id="Introction"><a href="#Introction" class="headerlink" title="Introction"></a>Introction</h1><h3 id="Disadvantage-of-other-segmentation-and-classification-methods"><a href="#Disadvantage-of-other-segmentation-and-classification-methods" class="headerlink" title="Disadvantage of other segmentation and classification methods"></a>Disadvantage of other segmentation and classification methods</h3><ol>
+<li>The need of a large number of <strong>fully-labeled</strong> dataset for training.</li>
+<li>Labeling data for segmentation task is difficult if com-pared to labeling data for classification.</li>
+</ol>
+<h3 id="Advantage-of-proposed-method"><a href="#Advantage-of-proposed-method" class="headerlink" title="Advantage of proposed method"></a>Advantage of proposed method</h3><ol>
+<li>Avoiding designing task-specific features for segmentation.</li>
+<li>Considering the more challenging problem of object segmentation and do not use any information other than the image-level annotation.</li>
+<li>No segmentation information (the proposed model is not refined over the segmen-tation data either), nor bounding box annotation during the training period.</li>
+</ol>
+<h3 id="A-general-illustation-of-approach"><a href="#A-general-illustation-of-approach" class="headerlink" title="A general illustation of approach"></a>A general illustation of approach</h3><p><img src="https://i.loli.net/2019/05/09/5cd401b7ebcfd.png" alt> </p>
+<h1 id="Architecture"><a href="#Architecture" class="headerlink" title="Architecture"></a>Architecture</h1><h2 id="Training-stage"><a href="#Training-stage" class="headerlink" title="Training stage"></a>Training stage</h2><p><img src="https://i.loli.net/2019/05/09/5cd41117e993c.png" alt> </p>
+<h3 id="Feature-extraction"><a href="#Feature-extraction" class="headerlink" title="Feature extraction"></a>Feature extraction</h3><ol>
+<li>Input：$400 \times 400$  RGB  patch  $I$.</li>
+<li>Use <strong>Overfeat</strong> model generates  feature  maps  of  dimensions  $1024\times h^i \times w^i$, which is pre-trained on ILSVRC13. The Overfeat model has 6 convolutional layers and 2 pooling layers.</li>
+</ol>
+<h3 id="Feature-segmentation"><a href="#Feature-segmentation" class="headerlink" title="Feature segmentation"></a>Feature segmentation</h3><p>Add  four  extra  4 convolutional  layers for segmentation. The  network outputs  <strong>$|C| +1$ feature  planes</strong>  of  dimensions  $h^o \times w^o$ for  each  class  considered  on  training,  plus  background.</p>
+<h3 id="Label-aggregation"><a href="#Label-aggregation" class="headerlink" title="Label aggregation"></a>Label aggregation</h3><ol>
+<li>The  network  produces  one  score $s_{i,j}^k=Y_{i,j}^k$ for each pixel  location  $(i,  j)$ from  the  subsampled  image  $I$,  and  for each  class  $k \in C$.</li>
+<li>Use <strong>Log-Sum-Exp  (LSE)</strong> for aggregation: <script type="math/tex; mode=display">s^k= \frac{1}r log[\frac{1}{h^0w^0}\sum_{i,j} exp(r s_{i,j}^k)]</script>The  hyper-parameter  $r$   controls  how  smooth  one  wants  the approximation  to  be:  <u>high  $r$  values  implies  having  an  effect  similar  to  the  max,  very  low  values  will  have  an  effect similar to the score averaging.</u> The advantage of this aggregation is that <strong>pixels having similar scores will have a similar weight in the training procedure, $r$ controlling this notion of “similarity”.</strong></li>
 </ol>
 
       
@@ -430,6 +442,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/20/Manifold-Based-Visual-Object-Counting/" rel="prev" title="Manifold-Based Visual Object Counting">
+                Manifold-Based Visual Object Counting <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -508,7 +524,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -521,7 +537,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -554,7 +570,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Abstract"><span class="nav-number">1.</span> <span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Introction"><span class="nav-number">2.</span> <span class="nav-text">Introction</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Abstract"><span class="nav-number">1.</span> <span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Introction"><span class="nav-number">2.</span> <span class="nav-text">Introction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Disadvantage-of-other-segmentation-and-classification-methods"><span class="nav-number">2.0.1.</span> <span class="nav-text">Disadvantage of other segmentation and classification methods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Advantage-of-proposed-method"><span class="nav-number">2.0.2.</span> <span class="nav-text">Advantage of proposed method</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-general-illustation-of-approach"><span class="nav-number">2.0.3.</span> <span class="nav-text">A general illustation of approach</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Architecture"><span class="nav-number">3.</span> <span class="nav-text">Architecture</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Training-stage"><span class="nav-number">3.1.</span> <span class="nav-text">Training stage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Feature-extraction"><span class="nav-number">3.1.1.</span> <span class="nav-text">Feature extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Feature-segmentation"><span class="nav-number">3.1.2.</span> <span class="nav-text">Feature segmentation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Label-aggregation"><span class="nav-number">3.1.3.</span> <span class="nav-text">Label aggregation</span></a></li></ol></li></ol></li></div>
             
 
           </div>
@@ -761,6 +777,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
 
   
 
